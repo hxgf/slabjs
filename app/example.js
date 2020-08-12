@@ -1,4 +1,4 @@
-module.exports = function (app, $) {
+module.exports = function(app, $) {
 
   app.use('/example/?', function(req, res) {
     res.json({
