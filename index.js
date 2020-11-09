@@ -23,7 +23,7 @@ require('./app/example')(app, $);
 app.all('/', (req, res) => {
   res.json({
     hi: '👋',
-    cash: '😈'
+    slab: '😈'
   });
 });
 
