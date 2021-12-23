@@ -2,7 +2,6 @@ Starter kit for building APIs w/ [Express.js](https://expressjs.com/)
 
 ---
 ## Installation
-One day there will be a [Yeoman](https://yeoman.io/) generator for this...in the mean time, clone & delete:
 
 ```bash
 npx degix hxgf/slabjs
