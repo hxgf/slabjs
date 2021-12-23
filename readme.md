@@ -5,11 +5,7 @@ Starter kit for building APIs w/ [Express.js](https://expressjs.com/)
 One day there will be a [Yeoman](https://yeoman.io/) generator for this...in the mean time, clone & delete:
 
 ```bash
-git clone https://gitlab.com/hxgf/slabjs.git .
-```
-
-```bash
-rm -Rf .git
+npx degix hxgf/slabjs
 ```
 
 ```bash
@@ -29,7 +25,7 @@ Basic middleware is already configured. After you install it you can just start 
   - [cors](http://expressjs.com/en/resources/middleware/cors.html)
 
 #### Everything is in index.js
-Take a look at the [index.js](https://gitlab.com/hxgf/slabjs/-/blob/master/index.js) file. It initializes the express app and configures CORS and body parser middleware, in addition to exposing a couple routes for error handling.
+Take a look at the [index.js](https://github.com/hxgf/slabjs/blob/master/index.js) file. It initializes the express app and configures CORS and body parser middleware, in addition to exposing a couple routes for error handling.
 
 The real "magic" is this part:
 ```
@@ -37,7 +33,7 @@ const $ = {
   settings: settings
 };
 ```
-It's a handy object that's accessible in all of your modules. By default, it includes the contents of the [settings.js](https://gitlab.com/hxgf/slabjs/-/blob/master/settings.js) file. You can, of course, extend it to include whatever you want (it's just an object!)
+It's a handy object that's accessible in all of your modules. By default, it includes the contents of the [settings.js](https://github.com/hxgf/slabjs/blob/master/settings.js) file. You can, of course, extend it to include whatever you want (it's just an object!)
 
 The other important part of this file is immediately after the cash object:
 ```
@@ -53,7 +49,7 @@ Just remember to write your modules in CommonJS format using the global 'app' an
 ```
 module.exports = function(app, $) { }
 ```
-We've included an [example module](https://gitlab.com/hxgf/slabjs/-/blob/master/app/example.js) in this directory that combines this pattern with a simple Express route and uses namespaced content from the [settings](https://gitlab.com/hxgf/slabjs/-/blob/master/settings.js) file.
+We've included an [example module](https://github.com/hxgf/slabjs/blob/master/app/example.js) in this directory that combines this pattern with a simple Express route and uses namespaced content from the [settings](https://github.com/hxgf/slabjs/blob/master/settings.js) file.
 
 
 
